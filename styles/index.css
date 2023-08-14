@@ -1,0 +1,140 @@
+body {
+  padding-left: 12rem;
+  padding-right: 12rem;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px rgb(211, 211, 211) solid;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+.footer .footer-links {
+  display: flex;
+  align-items: center;
+}
+
+.gif-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.gif-wrapper .gif {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+}
+
+.github {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background: #121212;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.x {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background: #121212;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.x:hover {
+  background-color: rgb(65, 92, 3);
+}
+
+.x:hover .logo {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(27%) saturate(4085%)
+    hue-rotate(99deg) brightness(96%) contrast(105%);
+}
+
+.x:hover a {
+  color: #002f01;
+  font-weight: bold;
+}
+
+.x .logo {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.5rem;
+  filter: invert(1);
+}
+
+.x a {
+  color: white;
+}
+
+.github:hover {
+  background-color: rgb(65, 92, 3);
+}
+
+.github:hover .logo {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(27%) saturate(4085%)
+    hue-rotate(99deg) brightness(96%) contrast(105%);
+}
+
+.github:hover a {
+  color: #002f01;
+  font-weight: bold;
+}
+
+.github .logo {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.github a {
+  color: white;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .gif-wrapper .gif {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
